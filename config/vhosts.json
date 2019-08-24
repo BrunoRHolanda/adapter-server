@@ -1,0 +1,55 @@
+[
+    {
+        "name": "default",
+        "domain": "myserver.com",
+        "port": 80,
+        "dir": "./www/domain.com",
+        "permissions": [
+            { "ready": true },
+            { "write": false },
+            { "target": "index" }
+        ],
+        "enabled": true,
+        "security": false
+    },
+    {
+        "name": "sub.domain",
+        "domain": "*.myserver.com",
+        "port": 80,
+        "dir": "./www/sub.domain.com",
+        "permissions": [
+            { "ready": true },
+            { "write": false },
+            { "target": "index" }
+        ],
+        "enabled": false,
+        "security": false
+    },
+    {
+        "name": "development",
+        "domain": "localhost",
+        "port": 8090,
+        "dir": "./www/localhost",
+        "permissions": [
+            { "ready": true },
+            { "write": true },
+            { "target": "all" }
+        ],
+        "enabled": false,
+        "security": false
+    },
+    {
+        "domain": "myserver.com",
+        "port": 443,
+        "dir": "./www/domain.com",
+        "permissions": [
+            { "ready": true },
+            { "write": false },
+            { "target": "index" }
+        ],
+        "enabled": false,
+        "security": true,
+        "key": "test/fixtures/keys/agent2-key.pem",
+        "pem": "test/fixtures/keys/agent2-cert.pem"
+    }
+]
