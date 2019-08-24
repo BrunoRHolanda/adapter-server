@@ -1,0 +1,34 @@
+{
+    "name": "@adapter/server",
+    "description": "Servidor Http adaptativo, seguro, rápido e prático para aplicações em nodeJS",
+    "version": "0.0.1-dev",
+    "author": "Bruno R. Holanda <brunorodriguesholanda@gmail.com>",
+    "license": "Apache-2.0",
+    "repository": "sr-holanda/adapter-server",
+    "homepage": "https://github.com/sr-holanda/adapter-server",
+    "keywords": [
+        "adapter",
+        "server",
+        "node",
+        "web",
+        "http",
+        "https",
+        "router",
+        "app",
+        "api"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "2.13.1",
+        "mocha": "5.2.0"
+    },
+    "files": [
+        "Readme.md",
+        "index.js",
+        "lib/"
+    ],
+    "scripts": {
+        "lint": "eslint .",
+        "test": "mocha"
+    }
+}
